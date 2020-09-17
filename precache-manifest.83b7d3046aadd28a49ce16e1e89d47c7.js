@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "77d4a3f4ca031f6f4ee05e35c18848b4",
+    "revision": "70e4bb5bad812bcf8a5c169d2a901190",
     "url": "/LarDosVelinhos/index.html"
   },
   {
-    "revision": "6d813351610802c23a46",
+    "revision": "5cf82292a8ce6d08d37d",
     "url": "/LarDosVelinhos/static/css/main.33bc148b.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/LarDosVelinhos/static/js/2.a183505f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6d813351610802c23a46",
-    "url": "/LarDosVelinhos/static/js/main.af3450e9.chunk.js"
+    "revision": "5cf82292a8ce6d08d37d",
+    "url": "/LarDosVelinhos/static/js/main.b81a936f.chunk.js"
   },
   {
     "revision": "c8386f6a177a0d8d8202",
