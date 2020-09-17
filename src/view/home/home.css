@@ -1,0 +1,84 @@
+.fundo2{
+  width: 100%;
+  padding: 15%;
+  margin: auto;
+  background-color: gray;
+  height: 48.5vw; 
+}
+
+.form-opcoes{
+  background-color: gray;
+}
+
+
+.botoes {
+  margin-top: -180px;
+  margin-left: -280px;
+  text-decoration: none;
+  background-color: rgba(3, 0, 0, 0.418);
+  color:  black;
+  transition: .5s ease-in;
+  width: 800px;
+  height: 200px;
+  align-items: center;
+  display: flex;
+  color: #ffffff;
+
+}
+.botoes a:hover{
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}
+
+.addPaciente {
+  background-color: rgba(206, 10, 10, 0);
+  color: rgb(10, 10, 10);
+  transition: .5s ease-in;
+  width: 180px;
+  height: 100px;
+  align-items: center;
+  display: flex;
+  font-size: x-large;
+}
+
+.addRemedio{
+  background-color: rgba(206, 10, 10, 0);
+  color: rgb(10, 10, 10);
+  transition: .5s ease-in;
+  width: 180px;
+  height: 100px;
+  align-items: center;
+  display: flex;
+  font-size: x-large;
+}
+.listarPaciente{
+  background-color: rgba(206, 10, 10, 0);
+  color: rgb(10, 10, 10);
+  transition: .5s ease-in;
+  width: 180px;
+  height: 100px;
+  align-items: center;
+  display: flex;
+  font-size: x-large;
+}
+.listarRemedio{
+  background-color: rgba(206, 10, 10, 0);
+  color: rgb(10, 10, 10);
+  transition: .5s ease-in;
+  width: 180px;
+  height: 100px;
+  align-items: center;
+  display: flex;
+  font-size: x-large;
+}
+.entregaRemedio{
+  background-color: rgba(206, 10, 10, 0);
+  color: rgb(10, 10, 10);
+  transition: .5s ease-in;
+  width: 180px;
+  height: 100px;
+  align-items: center;
+  display: flex;
+  font-size: x-large;
+}

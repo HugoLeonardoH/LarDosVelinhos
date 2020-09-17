@@ -1,0 +1,28 @@
+spam{
+  color: white;
+ 
+font-size: 30px;
+align-items: center;
+margin-left: 650px;
+background-color: rgba(3, 0, 0, 0.719);
+}
+form {
+  background-color: rgba(3, 0, 0, 0.719);
+  margin-top: 64px;
+  margin-left: 250px;
+  padding: 64px;
+  border-radius: 8px;
+  max-width: 730px;
+  box-sizing: unset;
+  margin-left: 380px;
+}
+.btn-cadastro{
+  background-color: white;
+  transition: 1s;
+  width: 300px;
+  margin-left: 230px;
+}
+.btn-cadastro:hover{
+  background-color: rgb(0, 119, 255);
+  color: white;
+}

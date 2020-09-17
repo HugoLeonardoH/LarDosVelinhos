@@ -1,0 +1,111 @@
+.endereco {
+  width: 350px;
+}
+body{
+  background-color: rgba(3, 0, 0, 0.719);
+ 
+ 
+}
+
+label{
+  color: white;
+}
+h5{
+  color: white;
+}
+.texto{
+  height: 100px;
+  width: 600px;
+}
+
+.texto2{
+  height: 80px;
+}
+.texto3{
+  height: 80px;
+  width: 400px;
+}
+
+button i{
+  height: 10px;
+  width: 12px;
+}
+.select {
+  margin-top: 18px;
+  width: 90px;
+  margin-left: 43px;
+  height: 30px;
+}
+.select2 {
+  margin-top: 25px;
+  width: 90px;
+  margin-left: 50px;
+  height: 30px;
+}
+.select3{
+  margin-top: 18px;
+  width: 90px;
+  margin-left: 20px;
+  height: 30px;
+}
+.titulo{
+
+  margin-left: 40px;
+}
+.btn-cadastro{
+margin-left:500px;
+}
+
+.txt{
+  margin-left: 60px;
+  margin-right: 80px;
+}
+.acm{
+  margin-left: 40px;
+}
+.ex3{
+  margin-left: 80px;
+  margin-top: 18px;
+  width: 90px;
+
+  height: 30px;
+}
+
+.txtnum8{ 
+  width: -120px;
+
+}
+.alg{
+  width: 80px;
+}
+
+.txt4{
+margin-left: 90px;
+  width:500px;
+}
+.txt10{
+  width: 500px;
+  margin-top: 40px;
+}
+
+.nx14{
+  margin-top: 60px;
+  width: 90px;
+  margin-left: -300px;
+  height: 30px;
+}
+.txt66{
+  margin-left: 80px;
+  margin-right: 80px;
+}
+.select22{
+
+  margin-top: 38px;
+  width: 90px;
+  margin-left: -180px;
+  height: 30px;
+}
+
+.fune2{
+  margin-left: 100px;
+}

@@ -1,0 +1,14 @@
+  
+.navbar{
+  background-color: gray;
+}
+
+.nav-item a{
+  color: black;
+  transition: .3s ease-in;
+}
+
+.nav-item a:hover{
+  color: white;
+  background-color: black;
+}
