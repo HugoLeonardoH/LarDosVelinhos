@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/LarDosVelinhos/static/css/main.33bc148b.chunk.css",
-    "main.js": "/LarDosVelinhos/static/js/main.7152bf30.chunk.js",
-    "main.js.map": "/LarDosVelinhos/static/js/main.7152bf30.chunk.js.map",
+    "main.js": "/LarDosVelinhos/static/js/main.dc3da04c.chunk.js",
+    "main.js.map": "/LarDosVelinhos/static/js/main.dc3da04c.chunk.js.map",
     "runtime-main.js": "/LarDosVelinhos/static/js/runtime-main.11e6f483.js",
     "runtime-main.js.map": "/LarDosVelinhos/static/js/runtime-main.11e6f483.js.map",
     "static/js/2.a183505f.chunk.js": "/LarDosVelinhos/static/js/2.a183505f.chunk.js",
     "static/js/2.a183505f.chunk.js.map": "/LarDosVelinhos/static/js/2.a183505f.chunk.js.map",
     "index.html": "/LarDosVelinhos/index.html",
-    "precache-manifest.b7076d7a4ca82a2cfed02a78e7fecbfc.js": "/LarDosVelinhos/precache-manifest.b7076d7a4ca82a2cfed02a78e7fecbfc.js",
+    "precache-manifest.890aae41ef4d4df395944962aba8b9ec.js": "/LarDosVelinhos/precache-manifest.890aae41ef4d4df395944962aba8b9ec.js",
     "service-worker.js": "/LarDosVelinhos/service-worker.js",
     "static/css/main.33bc148b.chunk.css.map": "/LarDosVelinhos/static/css/main.33bc148b.chunk.css.map",
     "static/js/2.a183505f.chunk.js.LICENSE.txt": "/LarDosVelinhos/static/js/2.a183505f.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.11e6f483.js",
     "static/js/2.a183505f.chunk.js",
     "static/css/main.33bc148b.chunk.css",
-    "static/js/main.7152bf30.chunk.js"
+    "static/js/main.dc3da04c.chunk.js"
   ]
 }
