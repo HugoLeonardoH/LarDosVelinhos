@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import {store,persistor} from '../src/store/';
+import { store, persistor } from '../src/store/';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 
@@ -23,19 +23,18 @@ function App() {
 
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <Route exact path='/' component={Login} />
-          <Route exact path='/home' component={Home} />
-          <Route exact path='/addPaciente' component={addPaciente} />
-          <Route exact path='/editarpaciente/:id' component={addPaciente} />
-          <Route exact path='/addRemedio' component={addRemedio} />
-          <Route exact path='/editarremedio/:id' component={addRemedio} />
-          <Route exact path='/entregaRemedio/:id' component={entregaRemedio} />
-          <Route exact path='/entregaRemedio' component={entregaRemedio} />
-          <Route exact path='/listarRemedio' component={listarRemedio} />
-          <Route exact path='/listarPaciente' component={listarPaciente} />
-          <Route exact path='/usuariorecuperarsenha' component={UsuarioRecuperarSenha} />
-      
+          <Route path='/home' component={Home} />
+          <Route path='/addPaciente' component={addPaciente} />
+          <Route path='/editarpaciente/:id' component={addPaciente} />
+          <Route path='/addRemedio/:id' component={addRemedio} />
+          <Route path='/editarremedio/:id' component={addRemedio} />
+          <Route path='/entregaRemedio/:id' component={entregaRemedio} />         
+          <Route path='/listarRemedio' component={listarRemedio} />
+          <Route path='/listarPaciente' component={listarPaciente} />
+          <Route path='/usuariorecuperarsenha' component={UsuarioRecuperarSenha} />
+
         </Router>
       </PersistGate>
     </Provider>

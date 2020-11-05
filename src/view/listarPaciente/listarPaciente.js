@@ -7,10 +7,10 @@ import { Link } from 'react-router-dom';
 
 
 
-function ListarPaciente() {
+function ListarPaciente(props) {
   const [excluido, setExcluido] = useState(0);
   const [moradores, setMoradores] = React.useState([]);
-
+  const [remedios, setRemedios] = React.useState([]);
 
   React.useEffect(() => {
     const fetchData = async () => {
@@ -36,6 +36,8 @@ function ListarPaciente() {
   }
  
 
+  
+
   function renderRows(moradores) {
     let loadedmoradores = moradores.map((morador, index) => (
       <tr key={index}>
@@ -45,9 +47,11 @@ function ListarPaciente() {
         <td>{morador.n8}</td>
 
         <td>
-          <Link to={`/editarpaciente/${morador.id}`} className="btn-editar "><i className="fas fa-pen-square fa-3x"></i></Link>
-          <button
-            className="btn btn-danger ml-2 "onClick={() => remover(morador.id)}><i className="fa fa-trash"></i></button>
+          <Link to={`/editarpaciente/${morador.id}`} className="btn-editar ml-2 mr-2 "><i className="fas fa-pen-square fa-3x"></i></Link>
+          <Link to={`/addRemedio/${morador.id}`} className="btn-editar ml-2 mr-2"><i className="fas fa-prescription-bottle-alt fa-3x ml-2"></i></Link>
+          <Link to={{ pathname: 'listarRemedio/', n1: { name: morador.n1}}} className="btn-editar "><i className="fas fas fa-list-ul fa-3x ml-2"></i></Link>
+          <button className="botaoExcluir btn btn-danger ml-5 "onClick={() => remover(morador.id)}><i className=" fa fa-trash"></i></button>
+            
         </td>
       </tr>
     ));
@@ -69,8 +73,7 @@ function ListarPaciente() {
             <th>Idade</th>
             <th>Data de Nascimento</th>
             <th>Cidade</th>
-
-            <th>Acoes</th>
+            <th>Ações</th>
           </tr>
         </thead>
         <tbody>{renderRows(moradores)}</tbody>

@@ -12,7 +12,7 @@ function EntregaRemedio(props) {
     const [carregando, setCarregando] = useState();
     const [remedios, setRemedios] = React.useState([]);
     const [msgTipo, setMsgTipo] = useState();
-    const [nomePaciente, setNomePaciente] = useState();
+    const [n1, setN1] = useState();
     const [nomeRemedio, setNomeRemedio] = useState();
     const [dosagem, setDosagem] = useState();
     const [uniMedidas, setUniMedidas] = useState();
@@ -31,7 +31,7 @@ function EntregaRemedio(props) {
     React.useEffect(() => {  
       if(props.match.params.id){                   
           firebase.firestore().collection('remedios').doc(props.match.params.id).get().then(resultado => {
-              setNomePaciente(resultado.data().nomePaciente)       
+              setN1(resultado.data().n1)       
               setNomeRemedio(resultado.data().nomeRemedio)  
               setLote(resultado.data().lote)                           
               setQuantidade(resultado.data().quantidade)  
@@ -86,7 +86,7 @@ function EntregaRemedio(props) {
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="inputEmail4">Nome Paciente</label>
-            <input type="text" class="form-control" id="inputEmail4" placeholder="Nome do Paciente" value={nomePaciente && nomePaciente} />
+            <input type="text" class="form-control" id="inputEmail4" placeholder="Nome do Paciente" value={n1 && n1} />
           </div>
 
           <div class="form-group col-md-6">

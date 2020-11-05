@@ -15,10 +15,9 @@ function Home() {
 
 
 
-            <Link  to="/addPaciente" className="mx-2 addPaciente"> Adicionar Paciente  </Link>
-            <Link to="/addRemedio" className="mx-2 addRemedio">Adicionar Remedios</Link>
-            <Link to="/listarPaciente" className="mx-2 listarPaciente">Listar Pacientes</Link>
-            <Link to="/listarRemedio" className="mx-2 listarRemedio">Listar  Remedios</Link>
+            <Link  to="/addPaciente" className="mx-2 addPaciente"> Adicionar Morador  </Link>          
+            <Link to="/listarPaciente" className="mx-2 listarPaciente">Listar Morador </Link>
+          
           
 
 

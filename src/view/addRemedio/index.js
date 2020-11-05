@@ -11,24 +11,22 @@ function AddRemedio(props) {
   const [carregando, setCarregando] = useState();
   const [remedios, setRemedios] = React.useState([]);
   const [msgTipo, setMsgTipo] = useState();
-  const [nomePaciente, setNomePaciente] = useState();
-  const [nomeRemedio, setNomeRemedio] = useState();
-  const [dosagem, setDosagem] = useState();
-  const [uniMedidas, setUniMedidas] = useState();
-  const [vencimento, setVencimento] = useState();
-  const [quantidade, setQuantidade] = useState();
-  const [lote, setLote] = useState();
+  const [nomePaciente, setNomePaciente] = useState("");
+  const [nomeRemedio, setNomeRemedio] = useState("");
+  const [vencimento, setVencimento] = useState("");
+  const [n1, setN1] = useState("");
+  const [quantidade, setQuantidade] = useState("");
+  const [lote, setLote] = useState("");
   const usuarioEmail = useSelector(state => state.usuarioEmail);
 
 
   const db = firebase.firestore();
 
 
-
   React.useEffect(() => {
     if (props.match.params.id) {
-      firebase.firestore().collection('remedios').doc(props.match.params.id).get().then(resultado => {
-        setNomePaciente(resultado.data().nomePaciente)
+      firebase.firestore().collection('moradores').doc(props.match.params.id).get().then(resultado => {
+        setN1(resultado.data().n1)
         setNomeRemedio(resultado.data().nomeRemedio)
         setQuantidade(resultado.data().quantidade)
         setVencimento(resultado.data().vencimento)
@@ -37,13 +35,15 @@ function AddRemedio(props) {
     }
   }, []);
 
+
+
   function Atualizar() {
     setMsgTipo(null);
     setCarregando(1);
 
     db.collection('remedios').doc(props.match.params.id).update({
 
-      nomePaciente: nomePaciente,
+      n1:n1,
       nomeRemedio: nomeRemedio,
       vencimento: vencimento,
       quantidade: quantidade,
@@ -70,7 +70,7 @@ function AddRemedio(props) {
 
     db.collection('remedios').add({
 
-      nomePaciente: nomePaciente,
+      n1:n1,
       nomeRemedio: nomeRemedio,
       usuario: usuarioEmail,
       vencimento: vencimento,
@@ -101,7 +101,7 @@ function AddRemedio(props) {
         <div class="form-row fundo">
           <div class="form-group col-md-4">
             <label>Nome Paciente</label>
-            <input onChange={(e) => setNomePaciente(e.target.value)} type="text" class="form-control" placeholder="Nome do Paciente" value={nomePaciente && nomePaciente} />
+            <input onChange={(e) => setN1(e.target.value)} type="text" class="form-control" placeholder="Nome do Paciente" value={n1 && n1} />
           </div>
 
 
@@ -135,7 +135,7 @@ function AddRemedio(props) {
         <div className="row">
           {
             carregando > 0 ? <div class="spinner-border text-danger mx-auto" role="status"><span class="sr-only">Loading...</span></div>
-              : <button onClick={props.match.params.id ? Atualizar : Cadastrar} type="button" className="btn btn-lg btn-block mt-3 mb-5 btn-cadastro">{props.match.params.id ? 'Atualizar' : 'Salvar'}</button>
+              : <button onClick={props.match.params.id ? Cadastrar : Atualizar } type="button" className="btn btn-lg btn-block mt-3 mb-5 btn-cadastro">{props.match.params.id ? 'Salvar' : 'Atualizar'}</button>
 
           }
         </div>

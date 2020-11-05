@@ -10,68 +10,68 @@ function AddPaciente(props) {
 
   const [carregando, setCarregando] = useState();
   const [msgTipo, setMsgTipo] = useState();
-  const [n1, setN1] = useState();
-  const [n2, setN2] = useState();
-  const [n3, setN3] = useState();
-  const [n4, setN4] = useState();
-  const [n5, setN5] = useState();
-  const [n6, setN6] = useState();
-  const [n7, setN7] = useState();
-  const [n8, setN8] = useState();
-  const [n9, setN9] = useState();
-  const [n10, setN10] = useState();
-  const [n11, setN11] = useState();
-  const [n12, setN12] = useState();
-  const [n13, setN13] = useState();
-  const [n14, setN14] = useState();
-  const [n15, setN15] = useState();
-  const [n16, setN16] = useState();
-  const [n17, setN17] = useState();
-  const [n18, setN18] = useState();
-  const [n19, setN19] = useState();
-  const [n20, setN20] = useState();
-  const [n21, setN21] = useState();
-  const [n22, setN22] = useState();
-  const [n23, setN23] = useState();
-  const [n24, setN24] = useState();
-  const [n25, setN25] = useState();
-  const [n26, setN26] = useState();
-  const [n27, setN27] = useState();
-  const [n28, setN28] = useState();
-  const [n29, setN29] = useState();
-  const [n30, setN30] = useState();
-  const [n31, setN31] = useState();
-  const [n32, setN32] = useState();
-  const [n33, setN33] = useState();
-  const [n34, setN34] = useState();
-  const [n35, setN35] = useState();
-  const [n36, setN36] = useState();
-  const [n37, setN37] = useState();
-  const [n38, setN38] = useState();
-  const [n39, setN39] = useState();
-  const [n40, setN40] = useState();
-  const [n41, setN41] = useState();
-  const [n42, setN42] = useState();
-  const [n43, setN43] = useState();
-  const [n44, setN44] = useState();
-  const [n45, setN45] = useState();
-  const [n46, setN46] = useState();
-  const [n47, setN47] = useState();
-  const [n48, setN48] = useState();
-  const [n49, setN49] = useState();
-  const [n50, setN50] = useState();
-  const [n51, setN51] = useState();
-  const [n52, setN52] = useState();
-  const [n53, setN53] = useState();
-  const [n54, setN54] = useState();
-  const [n55, setN55] = useState();
-  const [n56, setN56] = useState();
-  const [n57, setN57] = useState();
-  const [n58, setN58] = useState();
-  const [n59, setN59] = useState();
-  const [n60, setN60] = useState();
-  const [n61, setN61] = useState();
-  const [n62, setN62] = useState();
+  const [n1, setN1] = useState("");
+  const [n2, setN2] = useState("");
+  const [n3, setN3] = useState("");
+  const [n4, setN4] = useState("");
+  const [n5, setN5] = useState("");
+  const [n6, setN6] = useState("");
+  const [n7, setN7] = useState("");
+  const [n8, setN8] = useState("");
+  const [n9, setN9] = useState("");
+  const [n10, setN10] = useState("");
+  const [n11, setN11] = useState("");
+  const [n12, setN12] = useState("");
+  const [n13, setN13] = useState("");
+  const [n14, setN14] = useState("");
+  const [n15, setN15] = useState("");
+  const [n16, setN16] = useState("");
+  const [n17, setN17] = useState("");
+  const [n18, setN18] = useState("");
+  const [n19, setN19] = useState("");
+  const [n20, setN20] = useState("");
+  const [n21, setN21] = useState("");
+  const [n22, setN22] = useState("");
+  const [n23, setN23] = useState("");
+  const [n24, setN24] = useState("");
+  const [n25, setN25] = useState("");
+  const [n26, setN26] = useState("");
+  const [n27, setN27] = useState("");
+  const [n28, setN28] = useState("");
+  const [n29, setN29] = useState("");
+  const [n30, setN30] = useState("");
+  const [n31, setN31] = useState("");
+  const [n32, setN32] = useState("");
+  const [n33, setN33] = useState("");
+  const [n34, setN34] = useState("");
+  const [n35, setN35] = useState("");
+  const [n36, setN36] = useState("");
+  const [n37, setN37] = useState("");
+  const [n38, setN38] = useState("");
+  const [n39, setN39] = useState("");
+  const [n40, setN40] = useState("");
+  const [n41, setN41] = useState("");
+  const [n42, setN42] = useState("");
+  const [n43, setN43] = useState("");
+  const [n44, setN44] = useState("");
+  const [n45, setN45] = useState("");
+  const [n46, setN46] = useState("");
+  const [n47, setN47] = useState("");
+  const [n48, setN48] = useState("");
+  const [n49, setN49] = useState("");
+  const [n50, setN50] = useState("");
+  const [n51, setN51] = useState("");
+  const [n52, setN52] = useState("");
+  const [n53, setN53] = useState("");
+  const [n54, setN54] = useState("");
+  const [n55, setN55] = useState("");
+  const [n56, setN56] = useState("");
+  const [n57, setN57] = useState("");
+  const [n58, setN58] = useState("");
+  const [n59, setN59] = useState("");
+  const [n60, setN60] = useState("");
+  const [n61, setN61] = useState("");
+  const [n62, setN62] = useState("");
   const usuarioEmail = useSelector(state => state.usuarioEmail);
 
   const db = firebase.firestore();
@@ -398,7 +398,7 @@ function AddPaciente(props) {
           <div className="row">
             <label className="ml-5 mt-3">Bom estado de saúde, não usa medicamentos</label>
             <select onChange={(e) => setN12(e.target.value)} className="row select" value={n12 && n12}>
-              <option disabled selected value>Escolha</option>
+              <option>Escolha</option>
               <option>Sim</option>
               <option>Não</option>
             </select>
@@ -407,7 +407,7 @@ function AddPaciente(props) {
           <div className="row">
             <label className="ml-5 mt-3">Bom estado de saúde, usa medicamentos e é <br /> autonomo em atividades diarias</label>
             <select onChange={(e) => setN13(e.target.value)} className="row select2" value={n13 && n13}>
-              <option disabled selected value>Escolha</option>
+              <option>Escolha</option>
               <option>Sim</option>
               <option>Não</option>
             </select>
@@ -418,7 +418,7 @@ function AddPaciente(props) {
           <div className="row">
             <label className="ml-5 mt-3">Estado de saúde delicada onde necessita de <br />auxilio em atividades diarias e usa medicamentos<br /></label>
             <select onChange={(e) => setN14(e.target.value)} className="row select3" value={n14 && n14}>
-              <option disabled selected value>Escolha</option>
+              <option>Escolha</option>
               <option>Sim</option>
               <option>Não</option>
             </select>
@@ -429,7 +429,7 @@ function AddPaciente(props) {
           <div className="row">
             <label className="ml-5 mt-3">Faz uso de cadeira de rodas</label>
             <select onChange={(e) => setN15(e.target.value)} className="row select" value={n15 && n15}>
-              <option disabled selected value>Escolha</option>
+              <option>Escolha</option>
               <option>Sim</option>
               <option>Não</option>
             </select>
@@ -438,7 +438,7 @@ function AddPaciente(props) {
           <div className="row">
             <label className="ml-5 mt-3">Faz uso de andador</label>
             <select onChange={(e) => setN16(e.target.value)} className="row select2" value={n16 && n16}>
-              <option disabled selected value>Escolha</option>
+              <option>Escolha</option>
               <option>Sim</option>
               <option>Não</option>
             </select>
@@ -449,7 +449,7 @@ function AddPaciente(props) {
           <div className="row">
             <label className="ml-5 mt-3">Faz uso de muleta ou bengala</label>
             <select onChange={(e) => setN17(e.target.value)} className="row select3" value={n17 && n17} >
-              <option disabled selected value>Escolha</option>
+              <option>Escolha</option>
               <option>Sim</option>
               <option>Não</option>
             </select>
@@ -459,7 +459,7 @@ function AddPaciente(props) {
           <div className="row">
             <label className="ml-5 mt-3">Faz uso de fraldas</label>
             <select onChange={(e) => setN18(e.target.value)} className="row select3" value={n18 && n18}>
-              <option disabled selected value>Escolha</option>
+              <option>Escolha</option>
               <option>Sim</option>
               <option>Não</option>
             </select>
@@ -473,7 +473,7 @@ function AddPaciente(props) {
           <div className="row">
             <label className="ml-5 mt-3">Fumante</label>
             <select onChange={(e) => setN19(e.target.value)} className="row select" value={n19 && n19}>
-              <option disabled selected value>Escolha</option>
+              <option>Escolha</option>
               <option>Sim</option>
               <option>Não</option>
             </select>
@@ -482,7 +482,7 @@ function AddPaciente(props) {
           <div className="row">
             <label className="ml-5 mt-3"> Alcoolatra</label>
             <select onChange={(e) => setN20(e.target.value)} className="row select2" value={n20 && n20}>
-              <option disabled selected value>Escolha</option>
+              <option>Escolha</option>
               <option>Sim</option>
               <option>Não</option>
             </select>
@@ -493,7 +493,7 @@ function AddPaciente(props) {
           <div className="row">
             <label className="ml-5 mt-3">Drogas ilicitas<br /></label>
             <select onChange={(e) => setN21(e.target.value)} className="row select3" value={n21 && n21}>
-              <option disabled selected value>Escolha</option>
+              <option>Escolha</option>
               <option>Sim</option>
               <option>Não</option>
             </select>
@@ -506,7 +506,7 @@ function AddPaciente(props) {
           <div className="row">
             <label className="ml-5 mt-3">Facilidade de Relacionamento</label>
             <select onChange={(e) => setN22(e.target.value)} className="row select" value={n22 && n22}>
-              <option disabled selected value>Escolha</option>
+              <option>Escolha</option>
               <option>Sim</option>
               <option>Não</option>
             </select>
@@ -515,7 +515,7 @@ function AddPaciente(props) {
           <div className="row">
             <label className="ml-5 mt-3"> Isolamento Social</label>
             <select onChange={(e) => setN23(e.target.value)} className="row select2" value={n23 && n23}>
-              <option disabled selected value>Escolha</option>
+              <option>Escolha</option>
               <option>Sim</option>
               <option>Não</option>
             </select>
@@ -526,7 +526,7 @@ function AddPaciente(props) {
           <div className="row">
             <label className="ml-5 mt-3"> Possui manias que comprometem <br />o convivio em grupo</label>
             <select onChange={(e) => setN24(e.target.value)} className="row select3" value={n24 && n24}>
-              <option disabled selected value>Escolha</option>
+              <option>Escolha</option>
               <option>Sim</option>
               <option>Não</option>
             </select>
@@ -537,7 +537,7 @@ function AddPaciente(props) {
           <div className="row">
             <label className="ml-5 mt-3">Realiza acompanhamento medico</label>
             <select onChange={(e) => setN25(e.target.value)} className="row select ml-3" value={n25 && n25}>
-              <option disabled selected value>Escolha</option>
+              <option>Escolha</option>
               <option>Sim</option>
               <option>Não</option>
             </select>
@@ -549,7 +549,7 @@ function AddPaciente(props) {
           <div className="row">
             <label className="ml-5 mt-3"> Realiza acompanhamento odontológico</label>
             <select onChange={(e) => setN26(e.target.value)} className="row select2  ml-3" value={n26 && n26} >
-              <option disabled selected value>Escolha</option>
+              <option>Escolha</option>
               <option>Sim</option>
               <option>Não</option>
             </select>
@@ -560,7 +560,7 @@ function AddPaciente(props) {
           <div className="row">
             <label className="ml-5 mt-3"> Possui exames recentes</label>
             <select onChange={(e) => setN27(e.target.value)} className="row select3" value={n27 && n27}>
-              <option disabled selected value>Escolha</option>
+              <option>Escolha</option>
               <option>Sim</option>
               <option>Não</option>
             </select>
@@ -571,7 +571,7 @@ function AddPaciente(props) {
           <div className="row mt-4">
             <label className=" mt-3"> 8 - Possui Alergias?</label>
             <select onChange={(e) => setN28(e.target.value)} className="row select2" value={n28 && n28}>
-              <option disabled selected value >Escolha</option>
+              <option >Escolha</option>
               <option>Sim</option>
               <option>Não</option>
             </select>
@@ -587,7 +587,7 @@ function AddPaciente(props) {
             <div className="row">
               <label className="ml-5 mt-3">Hipertensão Arterial <br />Sistêmica</label>
               <select onChange={(e) => setN30(e.target.value)} className="row select" value={n30 && n30}>
-                <option disabled selected value>Escolha</option>
+                <option>Escolha</option>
                 <option>Sim</option>
                 <option>Não</option>
               </select>
@@ -596,7 +596,7 @@ function AddPaciente(props) {
             <div className="row">
               <label className="ml-5 mt-3">DPOC</label>
               <select onChange={(e) => setN31(e.target.value)} className="row select2" value={n31 && n31}>
-                <option disabled selected value>Escolha</option>
+                <option>Escolha</option>
                 <option>Sim</option>
                 <option>Não</option>
               </select>
@@ -607,7 +607,7 @@ function AddPaciente(props) {
             <div className="row">
               <label className="ml-5 mt-3">Diabetes</label>
               <select onChange={(e) => setN32(e.target.value)} className="row select3" value={n32 && n32}>
-                <option disabled selected value>Escolha</option>
+                <option>Escolha</option>
                 <option>Sim</option>
                 <option>Não</option>
               </select>
@@ -616,7 +616,7 @@ function AddPaciente(props) {
             <div className="row">
               <label className="ml-5 mt-3">Alzheimer</label>
               <select onChange={(e) => setN33(e.target.value)} className="row select3" value={n33 && n33}>
-                <option disabled selected value>Escolha</option>
+                <option>Escolha</option>
                 <option>Sim</option>
                 <option>Não</option>
               </select>
@@ -625,7 +625,7 @@ function AddPaciente(props) {
             <div className="row">
               <label className="ml-5 mt-3">Parkinson</label>
               <select onChange={(e) => setN34(e.target.value)} className="row select3" value={n34 && n34}>
-                <option disabled selected value>Escolha</option>
+                <option>Escolha</option>
                 <option>Sim</option>
                 <option>Não</option>
               </select>
@@ -634,7 +634,7 @@ function AddPaciente(props) {
             <div className="row">
               <label className="ml-5 mt-3">Sequela de AVC</label>
               <select onChange={(e) => setN35(e.target.value)} className="row select3" value={n35 && n35}>
-                <option disabled selected value>Escolha</option>
+                <option>Escolha</option>
                 <option>Sim</option>
                 <option>Não</option>
               </select>
@@ -669,9 +669,9 @@ function AddPaciente(props) {
         <div className="form mt-3 ml-5">
 
           <div className="row">
-            <label className="ml-4 mt-4">11- Aposetado</label>
+            <label className="ml-4 mt-4">11- Aposentado</label>
             <select onChange={(e) => setN39(e.target.value)} className="row select3" value={n39 && n39}>
-              <option disabled selected value>Escolha</option>
+              <option>Escolha</option>
               <option>Sim</option>
               <option>Não</option>
             </select>
@@ -680,7 +680,7 @@ function AddPaciente(props) {
           <div className="row">
             <label className="ml-4 mt-3"> 11-Pensionista</label>
             <select onChange={(e) => setN40(e.target.value)} className="row select3" value={n40 && n40}>
-              <option disabled selected value>Escolha</option>
+              <option>Escolha</option>
               <option>Sim</option>
               <option>Não</option>
             </select>
@@ -695,7 +695,7 @@ function AddPaciente(props) {
           <div className="row mt-5">
             <label className="ml-5 mt-4"> 12 - Possui plano de saude?</label>
             <select onChange={(e) => setN42(e.target.value)} className="row select2" value={n42 && n42}>
-              <option disabled selected value >Escolha</option>
+              <option >Escolha</option>
               <option>Sim</option>
               <option>Não</option>
             </select>
@@ -711,7 +711,7 @@ function AddPaciente(props) {
           <div className="row mt-4 ml-4">
             <label className="ml-3 mt-2"> 13 - Possui plano funerario</label>
             <select onChange={(e) => setN44(e.target.value)} className="row select22" value={n44 && n44}>
-              <option disabled selected value >Escolha</option>
+              <option >Escolha</option>
               <option>Sim</option>
               <option>Não</option>
             </select>
@@ -722,10 +722,10 @@ function AddPaciente(props) {
 
         <div className="form ml-5">
           <div className="row mt-2">
-            <label className="ml-5 mt-4"> 14- Deseja de livre vontade resisdir nesse lar</label>
+            <label className="ml-5 mt-4"> 14- Deseja de livre vontade residir nesse lar</label>
 
             <select onChange={(e) => setN46(e.target.value)} className="row nx14" value={n46 && n46}>
-              <option disabled selected value >Escolha</option>
+              <option >Escolha</option>
               <option>Sim</option>
               <option>Não</option>
             </select>
@@ -739,7 +739,7 @@ function AddPaciente(props) {
           <div className="row mt-4 ml-3">
             <label className="ml-1 mt-2"> 15 - Recebe beneficio integral</label>
             <select onChange={(e) => setN47(e.target.value)} className="row select22" value={n47 && n47}>
-              <option disabled selected value >Escolha</option>
+              <option >Escolha</option>
               <option>Sim</option>
               <option>Não</option>
             </select>
@@ -754,7 +754,7 @@ function AddPaciente(props) {
           <div className="row">
             <label className="ml-5 mt-3">Sozinho</label>
             <select onChange={(e) => setN49(e.target.value)} className="row select" value={n49 && n49}>
-              <option disabled selected value>Escolha</option>
+              <option>Escolha</option>
               <option>Sim</option>
               <option>Não</option>
             </select>
@@ -763,7 +763,7 @@ function AddPaciente(props) {
           <div className="row">
             <label className="ml-5 mt-3">Familia</label>
             <select onChange={(e) => setN50(e.target.value)} className="row select2" value={n50 && n50}>
-              <option disabled selected value>Escolha</option>
+              <option>Escolha</option>
               <option>Sim</option>
               <option>Não</option>
             </select>
@@ -774,7 +774,7 @@ function AddPaciente(props) {
           <div className="row">
             <label className="ml-5 mt-3">Outros</label>
             <select onChange={(e) => setN51(e.target.value)} className="row select3 ml-5" value={n51 && n51}>
-              <option disabled selected value>Escolha</option>
+              <option>Escolha</option>
               <option>Sim</option>
               <option>Não</option>
             </select>
@@ -789,7 +789,7 @@ function AddPaciente(props) {
           <div className="row mt-4 ml-3">
             <label className="ml-1 mt-2"> 17- Possui representante legal</label>
             <select onChange={(e) => setN53(e.target.value)} className="row select22" value={n53 && n53}>
-              <option disabled selected value >Escolha</option>
+              <option >Escolha</option>
               <option>Sim</option>
               <option>Não</option>
             </select>
@@ -805,7 +805,7 @@ function AddPaciente(props) {
           <div className="row">
             <label className="ml-5 mt-3">Solteiro</label>
             <select onChange={(e) => setN56(e.target.value)} className="row select" value={n56 && n56}>
-              <option disabled selected value>Escolha</option>
+              <option>Escolha</option>
               <option>Sim</option>
               <option>Não</option>
             </select>
@@ -814,7 +814,7 @@ function AddPaciente(props) {
           <div className="row">
             <label className="ml-5 mt-3">Casado</label>
             <select onChange={(e) => setN57(e.target.value)} className="row select2" value={n57 && n57}>
-              <option disabled selected value>Escolha</option>
+              <option>Escolha</option>
               <option>Sim</option>
               <option>Não</option>
             </select>
@@ -825,7 +825,7 @@ function AddPaciente(props) {
           <div className="row">
             <label className="ml-5 mt-3">Viuvo</label>
             <select onChange={(e) => setN58(e.target.value)} className="row select3" value={n58 && n58}>
-              <option disabled selected value>Escolha</option>
+              <option>Escolha</option>
               <option>Sim</option>
               <option>Não</option>
             </select>
