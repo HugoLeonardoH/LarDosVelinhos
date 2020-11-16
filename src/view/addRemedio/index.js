@@ -32,6 +32,7 @@ function AddRemedio(props) {
         setVencimento(resultado.data().vencimento)
         setLote(resultado.data().lote)
       })
+      
     }
   }, []);
 

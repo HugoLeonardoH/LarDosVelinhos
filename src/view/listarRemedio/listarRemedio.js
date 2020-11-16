@@ -52,7 +52,7 @@ function ListarRemedio(props) {
         <td>{remedio.quantidade}</td>
         <td>{remedio.lote}</td>
         <td>
-          {/* <Link to={`/editarremedio/${remedio.id}`} className="btn-editar ml-2 mr-2 "><i className="fas fa-pen-square fa-3x"></i></Link> */}
+          {/* <Link to={`/editarremedio/${morador.n1}`} className="btn-editar ml-2 mr-2 "><i className="fas fa-pen-square fa-3x"></i></Link> */}
 
           <Link to={`/entregaRemedio/${remedio.id}`} className="btn-editar  "><i className="fas fa-diagnoses fa-2x ml-2 mt-2"></i></Link>
 

@@ -44,7 +44,7 @@ function ListarPaciente(props) {
         <td>{morador.n1}</td>
         <td>{morador.n3}</td>
         <td>{morador.n2}</td>
-        <td>{morador.n8}</td>
+        <td>{morador.n5}</td>
 
         <td>
           <Link to={`/editarpaciente/${morador.id}`} className="btn-editar ml-2 mr-2 "><i className="fas fa-pen-square fa-3x"></i></Link>
@@ -70,9 +70,9 @@ function ListarPaciente(props) {
         <thead>
           <tr>
             <th>Nome</th>
-            <th>Idade</th>
-            <th>Data de Nascimento</th>
-            <th>Cidade</th>
+            <th dateFormat="dd/MM/yyyy">Data de Nascimento</th>
+            <th >Idade</th>           
+            <th>CPF</th>
             <th>Ações</th>
           </tr>
         </thead>

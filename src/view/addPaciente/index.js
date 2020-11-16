@@ -19,8 +19,7 @@ function AddPaciente(props) {
   const [n7, setN7] = useState("");
   const [n8, setN8] = useState("");
   const [n9, setN9] = useState("");
-  const [n10, setN10] = useState("");
-  const [n11, setN11] = useState("");
+
   const [n12, setN12] = useState("");
   const [n13, setN13] = useState("");
   const [n14, setN14] = useState("");
@@ -69,81 +68,77 @@ function AddPaciente(props) {
   const [n57, setN57] = useState("");
   const [n58, setN58] = useState("");
   const [n59, setN59] = useState("");
-  const [n60, setN60] = useState("");
   const [n61, setN61] = useState("");
   const [n62, setN62] = useState("");
   const usuarioEmail = useSelector(state => state.usuarioEmail);
 
   const db = firebase.firestore();
 
-  React.useEffect(() => {  
-    if(props.match.params.id){                   
-        firebase.firestore().collection('moradores').doc(props.match.params.id).get().then(resultado => {
-          setN1(resultado.data().n1)
-          setN2(resultado.data().n2)
-          setN3(resultado.data().n3)
-          setN4(resultado.data().n4)
-          setN5(resultado.data().n5)
-          setN6(resultado.data().n6)
-          setN7(resultado.data().n7)
-          setN8(resultado.data().n8)
-          setN9(resultado.data().n9)
-           setN10(resultado.data().n10)
-           setN11(resultado.data().n11)
-           setN12(resultado.data().n12)
-           setN13(resultado.data().n13)
-           setN14(resultado.data().n14)
-           setN15(resultado.data().n15)
-           setN16(resultado.data().n16)
-           setN17(resultado.data().n17)
-           setN18(resultado.data().n18)
-           setN19(resultado.data().n19)
-           setN20(resultado.data().n20)
-           setN21(resultado.data().n21)
-           setN22(resultado.data().n22)
-           setN23(resultado.data().n23)
-           setN24(resultado.data().n24)
-           setN25(resultado.data().n25)
-           setN26(resultado.data().n26)
-           setN27(resultado.data().n27)
-           setN28(resultado.data().n28)
-           setN29(resultado.data().n29)
-           setN30(resultado.data().n30)
-           setN31(resultado.data().n31)
-           setN32(resultado.data().n32)
-           setN33(resultado.data().n33)
-           setN34(resultado.data().n34)
-           setN35(resultado.data().n35)
-           setN36(resultado.data().n36)
-           setN37(resultado.data().n37)
-           setN38(resultado.data().n38)
-           setN39(resultado.data().n39)
-           setN40(resultado.data().n40)
-           setN41(resultado.data().n41)
-           setN42(resultado.data().n42)
-           setN43(resultado.data().n43)
-           setN44(resultado.data().n44)
-           setN45(resultado.data().n45)
-           setN46(resultado.data().n46)
-           setN47(resultado.data().n47)
-           setN48(resultado.data().n48)
-           setN49(resultado.data().n49)
-           setN50(resultado.data().n50)
-           setN51(resultado.data().n51)
-           setN52(resultado.data().n52)
-           setN53(resultado.data().n53)
-           setN54(resultado.data().n54)
-           setN55(resultado.data().n55)
-           setN56(resultado.data().n56)
-           setN57(resultado.data().n57)
-           setN58(resultado.data().n58)
-           setN59(resultado.data().n59)
-           setN60(resultado.data().n60)
-           setN61(resultado.data().n61)
-           setN62(resultado.data().n62)                                                                                            
-})
-}
-},  []);
+  React.useEffect(() => {
+    if (props.match.params.id) {
+      firebase.firestore().collection('moradores').doc(props.match.params.id).get().then(resultado => {
+        setN1(resultado.data().n1)
+        setN2(resultado.data().n2)
+        setN3(resultado.data().n3)
+        setN4(resultado.data().n4)
+        setN5(resultado.data().n5)
+        setN6(resultado.data().n6)
+        setN7(resultado.data().n7)
+        setN8(resultado.data().n8)
+        setN9(resultado.data().n9)
+        setN12(resultado.data().n12)
+        setN13(resultado.data().n13)
+        setN14(resultado.data().n14)
+        setN15(resultado.data().n15)
+        setN16(resultado.data().n16)
+        setN17(resultado.data().n17)
+        setN18(resultado.data().n18)
+        setN19(resultado.data().n19)
+        setN20(resultado.data().n20)
+        setN21(resultado.data().n21)
+        setN22(resultado.data().n22)
+        setN23(resultado.data().n23)
+        setN24(resultado.data().n24)
+        setN25(resultado.data().n25)
+        setN26(resultado.data().n26)
+        setN27(resultado.data().n27)
+        setN28(resultado.data().n28)
+        setN29(resultado.data().n29)
+        setN30(resultado.data().n30)
+        setN31(resultado.data().n31)
+        setN32(resultado.data().n32)
+        setN33(resultado.data().n33)
+        setN34(resultado.data().n34)
+        setN35(resultado.data().n35)
+        setN36(resultado.data().n36)
+        setN37(resultado.data().n37)
+        setN38(resultado.data().n38)
+        setN39(resultado.data().n39)
+        setN40(resultado.data().n40)
+        setN41(resultado.data().n41)
+        setN42(resultado.data().n42)
+        setN43(resultado.data().n43)
+        setN44(resultado.data().n44)
+        setN45(resultado.data().n45)
+        setN46(resultado.data().n46)
+        setN47(resultado.data().n47)
+        setN48(resultado.data().n48)
+        setN49(resultado.data().n49)
+        setN50(resultado.data().n50)
+        setN51(resultado.data().n51)
+        setN52(resultado.data().n52)
+        setN53(resultado.data().n53)
+        setN54(resultado.data().n54)
+        setN55(resultado.data().n55)
+        setN56(resultado.data().n56)
+        setN57(resultado.data().n57)
+        setN58(resultado.data().n58)
+        setN59(resultado.data().n59)
+        setN61(resultado.data().n61)
+        setN62(resultado.data().n62)
+      })
+    }
+  }, []);
 
 
 
@@ -162,8 +157,6 @@ function AddPaciente(props) {
       n7: n7,
       n8: n8,
       n9: n9,
-      n10: n10,
-      n11: n11,
       n12: n12,
       n13: n13,
       n14: n14,
@@ -212,11 +205,10 @@ function AddPaciente(props) {
       n57: n57,
       n58: n58,
       n59: n59,
-      n60: n60,
       n61: n61,
       n62: n62,
       usuario: usuarioEmail,
-    
+
 
 
     }).then(() => {
@@ -247,8 +239,6 @@ function AddPaciente(props) {
       n7: n7,
       n8: n8,
       n9: n9,
-      n10: n10,
-      n11: n11,
       n12: n12,
       n13: n13,
       n14: n14,
@@ -297,7 +287,6 @@ function AddPaciente(props) {
       n57: n57,
       n58: n58,
       n59: n59,
-      n60: n60,
       n61: n61,
       n62: n62,
 
@@ -334,14 +323,14 @@ function AddPaciente(props) {
 
       <div className="row ml-1">
         <div className=" ml-5 mr-5">
-          <label>Data de Nascimento:</label>
-          <input onChange={(e) => setN2(e.target.value)} type="date" className="form-control" value={n2 && n2} />
+          <label >Data de Nascimento:</label>
+          <input onChange={(e) => setN2(e.target.value)} type="date"  className="form-control" value={n2 && n2} />
         </div>
 
 
         <div className="p ml-5 mr-5">
           <label>Idade:</label>
-          <input onChange={(e) => setN3(e.target.value)} type="text" className="form-control" value={n3 && n3} />
+          <input onChange={(e) => setN3(e.target.value)} type="text" className="form-control" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" value={n3 && n3} />
         </div>
 
         <div className=" ml-5 mr-5">
@@ -355,8 +344,6 @@ function AddPaciente(props) {
         </div>
       </div>
 
-
-
       <div className="row mt-3 ml-2">
         <div className="ml-5 mr-">
           <label>Endereço:</label>
@@ -369,7 +356,7 @@ function AddPaciente(props) {
         </div>
 
         <div className="ml-5 mr-">
-          <label>Cidade:</label>
+          <label>Cidade Natal:</label>
           <input onChange={(e) => setN8(e.target.value)} type="text" className="form-control " value={n8 && n8} />
         </div>
 
@@ -378,16 +365,7 @@ function AddPaciente(props) {
           <input onChange={(e) => setN9(e.target.value)} type="text" className="form-control" value={n9 && n9} />
         </div>
       </div>
-      <div className="row mt-3 ml-2">
-        <div className=" ml-5 mr-5">
-          <label>Telefone Fixo:</label>
-          <input onChange={(e) => setN10(e.target.value)} type="text" className="form-control" value={n10 && n10} />
-        </div>
-        <div className=" ml-3 mr-5">
-          <label>Celular:</label>
-          <input onChange={(e) => setN11(e.target.value)} type="text" className="form-control" value={n11 && n11} />
-        </div>
-      </div>
+
 
 
 
@@ -652,7 +630,7 @@ function AddPaciente(props) {
 
           <div className=" ml-5 mr-5 mt-5 ml-5">
             <label>9-Historico de Saude</label>
-            <input onChange={(e) => setN37(e.target.value)} type="text-area" className="form-control texto"value={n37 && n37} />
+            <input onChange={(e) => setN37(e.target.value)} type="text-area" className="form-control texto" value={n37 && n37} />
             <div className=" ml-1 mr-5 mb-5 txt10">
               <label>10-Se o candidato fizer uso de medicamento descrever a relação de medicamentos utilizados</label>
               <input onChange={(e) => setN38(e.target.value)} type="text-area" className="form-control texto" value={n38 && n38} />
@@ -846,8 +824,7 @@ function AddPaciente(props) {
           <label className="ml-2 mt-2 ">20- Resposavel pelo preenchimento<br />
             <label> Nome:</label>
             <input onChange={(e) => setN59(e.target.value)} type="text" className="form-control" value={n59 && n59} />
-            <label> Parentesco?</label>
-            <input onChange={(e) => setN60(e.target.value)} type="text" className="form-control" value={n60 && n60} />
+
             <label> Data do preenchimento:</label>
             <input onChange={(e) => setN61(e.target.value)} type="date" className="form-control" value={n61 && n61} />
           </label>
@@ -862,8 +839,8 @@ function AddPaciente(props) {
       <div className="row">
         {
           carregando > 0 ? <div class="spinner-border text-danger mx-auto " role="status"><span class="sr-only">Loading...</span></div>
-            :<button onClick={props.match.params.id ? Atualizar : Cadastrar} type="button" className="btn btn-lg btn-block mt-3 mb-5 btn-cadastro">{props.match.params.id ? 'Atualizar ' : 'Cadastrar'}</button>
-          
+            : <button onClick={props.match.params.id ? Atualizar : Cadastrar} type="button" className="btn btn-lg btn-block mt-3 mb-5 btn-cadastro">{props.match.params.id ? 'Atualizar ' : 'Cadastrar'}</button>
+
 
         }
       </div>
@@ -874,7 +851,7 @@ function AddPaciente(props) {
 
       </div>
 
-      
+
     </>
 
   )
