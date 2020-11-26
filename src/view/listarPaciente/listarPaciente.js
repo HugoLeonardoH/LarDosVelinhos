@@ -42,8 +42,8 @@ function ListarPaciente(props) {
     let loadedmoradores = moradores.map((morador, index) => (
       <tr key={index}>
         <td>{morador.n1}</td>
-        <td>{morador.n3}</td>
         <td>{morador.n2}</td>
+        <td>{morador.n3}</td>
         <td>{morador.n5}</td>
 
         <td>
